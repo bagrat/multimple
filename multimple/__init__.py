@@ -1,6 +1,9 @@
 from functools import wraps
 
 
+__version__ = "0.0"
+
+
 class Multimple(object):
     _IMPL_ATTR_NAME = "_multimple_current"
 
