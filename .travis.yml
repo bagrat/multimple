@@ -1,0 +1,16 @@
+language: python
+python:
+  - "3.5"
+install:
+  - "python setup.py install"
+  - "pip install -r .build-requirements.txt"
+script:
+    - "python -m 'nose'"
+after_success:
+  - "coveralls"
+  # - "mkdocs gh-deploy --clean"
+
+branches:
+  only:
+    - master
+    - dev
