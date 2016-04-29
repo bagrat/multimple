@@ -26,7 +26,12 @@ class Multimple(object):
             impl = self._impls.get(current_impl)
 
         if not impl:
-            raise NotImplementedError("")
+            raise NotImplementedError(
+                "'{}' is not implemented for '{}'".format(
+                    self._name,
+                    current_impl
+                )
+            )
 
         return impl.__get__(owner, klass)
 
