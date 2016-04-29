@@ -6,4 +6,4 @@ setup(name='multimple',
       author='Bagrat Aznauryan',
       author_email='bagrat@aznauryan.org',
       packages=find_packages(),
-      version='0.0')
+      version='0.1')
